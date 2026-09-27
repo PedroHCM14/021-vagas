@@ -40,6 +40,12 @@ const vagas = [
     nome: 'Le Depanneur',
     descricao: 'Vagas para jovem aprendiz.<br> Auxiliar nas rotinas administrativas e de escritório;<br> Organizar documentos e arquivos;<br> Prestar suporte no atendimento a clientes e fornecedores;<br> Colaborar na organização do ambiente de trabalho;<br> Apoiar em atividades operacionais específicas do setor de alimentos, conforme demanda.<br>Ensino Médio completo ou em curso; Idade entre 14 e 24 anos (conforme Lei da Aprendizagem);<br> Conhecimento básico em Pacote Office (Word, Excel);<br> Boa comunicação e proatividade; Vontade de aprender e se desenvolver.<br> Desejável: Noções de organização e trabalho em equipe.  num curso condizente a tarefa',
     info: 'Mais informações: https://www.catho.com.br/vagas/jovem-aprendiz/38462082?origem_apply=direto&entrada_apply=busca-de-vagas'
+  },
+  {
+    id: 8,
+    nome: 'Programa Juros por Educação',
+    descricao: 'O Programa Juros por Educação está com inscrições abertas para cursos técnicos concomitantes nas instituições SENAI, SENAC e FAETEC.<br><br>Com prazos prorrogados, a iniciativa oferece, além das aulas gratuitas, a Bolsa-Permanência (Edutec), um auxílio financeiro destinado a custear despesas de transporte e alimentação dos alunos. Para concorrer a uma das vagas, os interessados devem estar cursando a 2ª ou 3ª série do Ensino Médio. Estudantes matriculados a partir do Módulo II (da Educação de Jovens e Adultos ou equivalente) também podem participar, mas com inscrição restrita às vagas da FAETEC. Em relação à faixa etária, a idade mínima exigida é de 14 anos para o SENAI e de 16 anos para o SENAC e a FAETEC.Os prazos de inscrição foram estendidos. Para a FAETEC, o cadastro deve ser feito até o dia 25 de setembro. Já para o SENAI e o SENAC, o prazo vai até o dia 30 de setembro.',
+    info: 'O processo de matrícula varia de acordo com a instituição escolhida:<br><br>FAETEC: O estudante classificado deverá comparecer presencialmente ao polo de ensino entre os dias 29 de setembro e 2 de outubro, portando todos os documentos necessários.<br>SENAI e SENAC: Após realizar a pré-inscrição online, o candidato receberá um e-mail de convocação em até 48 horas, informando a data, o local e o horário para a efetivação da matrícula.Para todos os casos, os estudantes menores de 18 anos deverão obrigatoriamente estar acompanhados de um responsável legal no ato da matrícula.'
   }
 ];
 
@@ -49,7 +55,7 @@ vagas.forEach(vaga => {
   lista.innerHTML += `
   <div class="card col-12 col-sm-11">
     <div class="card-body">
-        <h5 class="card-title">${vaga.nome}</h5>
+        <h4 class="card-title text-secondary fw-bold">${vaga.nome}</h4>
         <p class="card-text">${vaga.descricao}</p>
         <p></p>
         <p class="card-text">${vaga.info}</p>
